@@ -1,0 +1,27 @@
+{
+  "name": "bts-qrcodes",
+  "version": "1.0.0",
+  "description": "qr codes for bitshares operations",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BTS-CM/BTS-QRCodes.git"
+  },
+  "keywords": [
+    "bitshares"
+  ],
+  "author": "R",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BTS-CM/BTS-QRCodes/issues"
+  },
+  "homepage": "https://github.com/BTS-CM/BTS-QRCodes#readme",
+  "dependencies": {
+    "@trisbee/qr-image-nodejs": "^1.2.4",
+    "prompts": "^2.4.2"
+  }
+}
