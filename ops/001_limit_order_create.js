@@ -2,7 +2,7 @@ var expiry = new Date();
 expiry.setMinutes(expiry.getMinutes() + 60);
 
 let _operation = [
-  "limit_order_create",
+  1,
   {
     seller: "1.2.26299",
     amount_to_sell: {

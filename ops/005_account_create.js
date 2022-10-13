@@ -1,5 +1,5 @@
-export const operation = [
-  "account_create",
+let _operation = [
+  5,
   {
     registrar: "1.2.x",
     referrer: "1.2.x",
@@ -28,3 +28,5 @@ export const operation = [
     extensions: []
   }
 ]
+
+export const operation = _operation;

@@ -91,7 +91,26 @@ let run = async function () {
                             value: op
                         }
                     })
-                }
+                },
+                {
+                    type: 'select',
+                    name: 'mins',
+                    message: 'Expires in how many mins?',
+                    choices: [
+                        {
+                            title: '60',
+                            value: 60
+                        },
+                        {
+                            title: '180',
+                            value: 180
+                        },
+                        {
+                            title: '6000',
+                            value: 6000
+                        }
+                    ]
+                },
             ],
             { onCancel }
         );
@@ -112,11 +131,27 @@ let run = async function () {
         return;
     }
 
+    var expiry = new Date();
+    expiry.setMinutes(expiry.getMinutes() + response.mins);
+
+    let qrContent = {
+        "expiration": expiry,
+        "operations": [
+            JSON.parse(JSON.stringify(requestedOP.operation))
+        ],
+        "extensions": [],
+        "signatures": []
+    }
+
     let imageBuffer = await fs.readFileSync('./logo.png');
 
+    console.log({
+        qrContent
+    })
+
     const resultWithImage = await generateQRWithImage(
-        JSON.stringify(requestedOP.operation),
-        500, // width
+        JSON.stringify(qrContent),
+        300, // width
         10, // margin
         imageBuffer, //imageBuffer
         {

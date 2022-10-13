@@ -1,5 +1,5 @@
-export const operation = [
-    "blind_transfer",
+let _operation = [
+    40,
     {
       inputs: [{
         commitment: "",
@@ -27,3 +27,5 @@ export const operation = [
       }]
     }
 ]
+
+export const operation = _operation;

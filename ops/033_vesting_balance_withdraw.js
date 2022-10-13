@@ -1,5 +1,5 @@
-export const operation = [
-    "vesting_balance_withdraw",
+let _operation = [
+    33,
     {
       vesting_balance: "1.13.x",
       owner: "1.2.x",
@@ -9,3 +9,5 @@ export const operation = [
       }
     }
 ]
+
+export const operation = _operation;

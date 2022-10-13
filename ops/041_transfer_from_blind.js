@@ -1,5 +1,5 @@
-export const operation = [
-    "transfer_from_blind ",
+let _operation = [
+    41,
     {
       amount: {
         amount: 1,
@@ -18,3 +18,5 @@ export const operation = [
       }],
     }
 ]
+
+export const operation = _operation;

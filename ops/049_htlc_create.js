@@ -1,5 +1,5 @@
-export const operation = [
-    "htlc_create",
+let _operation = [
+    49,
     {
       from: "1.2.x",
       to: "1.2.x",
@@ -13,3 +13,5 @@ export const operation = [
       extensions: []
     }
 ]
+
+export const operation = _operation;

@@ -1,5 +1,5 @@
-export const operation = [
-    "credit_offer_create",
+let _operation = [
+    69,
     {
       owner_account: "1.2.x",
       asset_type: "1.3.x",
@@ -43,3 +43,5 @@ export const operation = [
       extensions: []
     }
 ]
+
+export const operation = _operation;

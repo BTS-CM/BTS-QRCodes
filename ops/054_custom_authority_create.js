@@ -1,5 +1,5 @@
-export const operation = [
-    "custom_authority_create",
+let _operation = [
+    54,
     {
       account: "1.2.x",
       enabled: false,
@@ -20,3 +20,5 @@ export const operation = [
       extensions: []
     }
 ]
+
+export const operation = _operation;

@@ -1,5 +1,5 @@
-export const operation = [
-    "withdraw_permission_claim",
+let _operation = [
+    27,
     {
       withdraw_permission: "1.12.x",
       withdraw_from_account: "1.2.x",
@@ -11,3 +11,5 @@ export const operation = [
       memo: ""
     }
 ]
+
+export const operation = _operation;

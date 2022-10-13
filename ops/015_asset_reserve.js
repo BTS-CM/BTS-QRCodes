@@ -1,5 +1,5 @@
-export const operation = [
-    "asset_reserve",
+let _operation = [
+    15,
     {
       payer: "1.2.x",
       amount_to_reserve: {
@@ -9,3 +9,5 @@ export const operation = [
       extensions: []
     }
 ]
+
+export const operation = _operation;

@@ -1,5 +1,5 @@
-export const operation = [
-    "withdraw_permission_create",
+let _operation = [
+    25,
     {
       withdraw_from_account: "1.2.x",
       authorized_account: "1.2.x",
@@ -12,3 +12,5 @@ export const operation = [
       period_start_time: 1663764871
     }
 ]
+
+export const operation = _operation;

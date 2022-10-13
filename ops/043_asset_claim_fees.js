@@ -1,5 +1,5 @@
-export const operation = [
-    "asset_claim_fees",
+let _operation = [
+    43,
     {
       issuer: "1.2.x",
       amount_to_claim: {
@@ -9,3 +9,5 @@ export const operation = [
       extensions: []
     }
 ]
+
+export const operation = _operation;

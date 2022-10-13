@@ -1,5 +1,5 @@
-export const operation = [
-    "asset_publish_feed",
+let _operation = [
+    19,
     {
       publisher: "1.2.x",
       asset_id: "1.3.x",
@@ -30,3 +30,5 @@ export const operation = [
       extensions: set(future_extensions)
     }
 ]
+
+export const operation = _operation;

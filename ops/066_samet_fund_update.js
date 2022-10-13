@@ -1,5 +1,5 @@
-export const operation = [
-    "samet_fund_update",
+let _operation = [
+    66,
     {
       owner_account: "1.2.x",
       fund_id: "1.20.x",
@@ -11,3 +11,5 @@ export const operation = [
       extensions: []
     }
 ]
+
+export const operation = _operation;

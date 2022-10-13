@@ -1,5 +1,5 @@
-export const operation = [
-    "asset_global_settle",
+let _operation = [
+    18,
     {
       issuer: "1.2.x",
       asset_to_settle: "1.3.x",
@@ -16,3 +16,5 @@ export const operation = [
       extensions: []
     }
 ]
+
+export const operation = _operation;

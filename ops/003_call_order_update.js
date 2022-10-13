@@ -1,5 +1,5 @@
-export const operation = [
-  "call_order_update",
+let _operation = [
+  3,
   {
     funding_account: "1.2.x",
     delta_collateral: {
@@ -13,4 +13,6 @@ export const operation = [
     extensions: []
   }
 ]
+
+export const operation = _operation;
 

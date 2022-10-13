@@ -1,5 +1,5 @@
-export const operation = [
-    "override_transfer",
+let _operation = [
+    38,
     {
       issuer: "1.2.x",
       from: "1.2.x",
@@ -12,3 +12,5 @@ export const operation = [
       extensions: []
     }
 ]
+
+export const operation = _operation;

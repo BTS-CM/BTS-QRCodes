@@ -1,5 +1,5 @@
-export const operation = [
-    "ticket_update",
+let _operation = [
+    58,
     {
       ticket: "1.18.x",
       account: "1.2.x",
@@ -11,3 +11,5 @@ export const operation = [
       extensions: []
     }
 ]
+
+export const operation = _operation;

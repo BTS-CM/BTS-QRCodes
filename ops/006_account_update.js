@@ -1,5 +1,5 @@
-export const operation = [
-  "account_update",
+let _operation = [
+  6,
   {
     account: "1.2.x",
     owner: {},
@@ -8,3 +8,5 @@ export const operation = [
     extensions: []
   }
 ]
+
+export const operation = _operation;

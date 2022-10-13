@@ -1,5 +1,5 @@
-export const operation = [
-  "account_whitelist",
+let _operation = [
+  7,
   {
     authorizing_account: "1.2.x",
     account_to_list: "1.2.x",
@@ -7,3 +7,5 @@ export const operation = [
     extensions: []
   }
 ]
+
+export const operation = _operation;

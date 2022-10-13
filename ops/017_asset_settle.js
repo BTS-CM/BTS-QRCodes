@@ -1,5 +1,5 @@
-export const operation = [
-    "asset_settle",
+let _operation = [
+    17,
     {
       account: "1.2.x",
       amount: {
@@ -9,3 +9,5 @@ export const operation = [
       extensions: []
     }
 ]
+
+export const operation = _operation;

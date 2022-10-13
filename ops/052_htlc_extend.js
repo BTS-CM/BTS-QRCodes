@@ -1,5 +1,5 @@
-export const operation = [
-    "htlc_extend",
+let _operation = [
+    52,
     {
       htlc_id: "1.16.x",
       update_issuer: "1.2.x",
@@ -7,3 +7,5 @@ export const operation = [
       extensions: []
     }
 ]
+
+export const operation = _operation;

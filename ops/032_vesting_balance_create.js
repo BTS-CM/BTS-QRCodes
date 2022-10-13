@@ -1,5 +1,5 @@
-export const operation = [
-    "vesting_balance_create",
+let _operation = [
+    32,
     {
       creator: "1.2.x",
       owner: "1.2.x",
@@ -14,3 +14,5 @@ export const operation = [
       }]
     }
 ]
+
+export const operation = _operation;

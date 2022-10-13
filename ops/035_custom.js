@@ -1,5 +1,5 @@
-export const operation = [
-    "custom",
+let _operation = [
+    35,
     {
       payer: "1.2.x",
       required_auths: ["1.2.x"],
@@ -7,3 +7,5 @@ export const operation = [
       data: "bytes..."
     }
 ]
+
+export const operation = _operation;

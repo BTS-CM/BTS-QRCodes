@@ -1,9 +1,9 @@
-export const operation = [
-    "credit_offer_update",
+let _operation = [
+    71,
     {
       owner_account: "1.2.x",
       offer_id: "1.21.x",
-      delta_amount: optional(asset),
+      delta_amount: optional(asset), // todo: fix this line
       fee_rate: 1,
       max_duration_seconds: 6000,
       min_deal_amount: 1,
@@ -30,3 +30,5 @@ export const operation = [
       extensions: []
     }
 ]
+
+export const operation = _operation;

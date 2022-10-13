@@ -1,5 +1,5 @@
-export const operation = [
-    "worker_create",
+let _operation = [
+    34,
     {
       owner: "1.2.x",
       work_begin_date: 1663766042,
@@ -10,3 +10,5 @@ export const operation = [
       initializer: [ 0,{} ]
     }
 ]
+
+export const operation = _operation;

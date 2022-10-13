@@ -1,5 +1,5 @@
-export const operation = [
-    "proposal_delete",
+let _operation = [
+    24,
     {
       fee_paying_account: "1.2.x",
       using_owner_authority: true,
@@ -7,3 +7,5 @@ export const operation = [
       extensions: []
     }
 ]
+
+export const operation = _operation;

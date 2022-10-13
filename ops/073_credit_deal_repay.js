@@ -1,5 +1,5 @@
-export const operation = [
-    "credit_deal_repay",
+let _operation = [
+    73,
     {
       account: "1.2.x",
       deal_id: "1.22.x",
@@ -14,3 +14,5 @@ export const operation = [
       extensions: []
     }
 ]
+
+export const operation = _operation;

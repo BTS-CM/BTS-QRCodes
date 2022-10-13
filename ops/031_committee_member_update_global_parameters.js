@@ -1,5 +1,5 @@
-export const operation = [
-    "committee_member_update_global_parameters",
+let _operation = [
+    31,
     {
       new_parameters: {
         current_fees: {
@@ -45,3 +45,5 @@ export const operation = [
       }
     }
 ]
+
+export const operation = _operation;

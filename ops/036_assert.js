@@ -1,5 +1,5 @@
-export const operation = [
-    "assert",
+let _operation = [
+    36,
     {
       fee_paying_account: "1.2.x",
       predicates: [
@@ -10,3 +10,5 @@ export const operation = [
       extensions: []
     }
 ]
+
+export const operation = _operation;

@@ -1,5 +1,5 @@
-export const operation = [
-    "balance_claim",
+let _operation = [
+    37,
     {
       deposit_to_account: "1.2.x",
       balance_to_claim: "1.15.x",
@@ -10,3 +10,5 @@ export const operation = [
       }
     }
 ]
+
+export const operation = _operation;

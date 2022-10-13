@@ -1,5 +1,5 @@
-export const operation = [
-    "proposal_create",
+let _operation = [
+    22,
     {
       fee_paying_account: "1.2.x",
       expiration_time: 1763764722,
@@ -8,3 +8,5 @@ export const operation = [
       extensions: []
     }
 ]
+
+export const operation = _operation;

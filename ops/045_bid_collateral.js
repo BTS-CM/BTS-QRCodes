@@ -1,5 +1,5 @@
-export const operation = [
-    "bid_collateral",
+let _operation = [
+    45,
     {
       bidder: "1.2.x",
       additional_collateral: {
@@ -13,3 +13,5 @@ export const operation = [
       extensions: []
     }
 ]
+
+export const operation = _operation;

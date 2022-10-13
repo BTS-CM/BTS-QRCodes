@@ -1,5 +1,5 @@
-export const operation = [
-    "credit_offer_accept",
+let _operation = [
+    72,
     {
       borrower: "1.2.x",
       offer_id: "1.21.x",
@@ -16,3 +16,5 @@ export const operation = [
       extensions: []
     }
 ]
+
+export const operation = _operation;

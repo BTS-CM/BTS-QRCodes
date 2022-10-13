@@ -1,5 +1,5 @@
-export const operation = [
-    "withdraw_permission_update",
+let _operation = [
+    26,
     {
       withdraw_from_account: "1.2.x",
       authorized_account: "1.2.x",
@@ -13,3 +13,5 @@ export const operation = [
       periods_until_expiration: uint32
     }
 ]
+
+export const operation = _operation;

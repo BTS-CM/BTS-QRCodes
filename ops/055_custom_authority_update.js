@@ -1,5 +1,5 @@
-export const operation = [
-    "custom_authority_update",
+let _operation = [
+    55,
     {
       account: "1.2.x",
       authority_to_update: "2.14.x",
@@ -21,3 +21,5 @@ export const operation = [
       extensions: []
     }
 ]
+
+export const operation = _operation;

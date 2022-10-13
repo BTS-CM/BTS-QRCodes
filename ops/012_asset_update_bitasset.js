@@ -1,5 +1,5 @@
-export const operation = [
-    "asset_update_bitasset",
+let _operation = [
+    12,
     {
       issuer: "1.2.x",
       asset_to_update: "1.3.x",
@@ -15,3 +15,5 @@ export const operation = [
       extensions: []
     }
 ]
+
+export const operation = _operation;

@@ -1,5 +1,5 @@
-export const operation = [
-    "liquidity_pool_create",
+let _operation = [
+    59,
     {
       account: "1.2.x",
       asset_a: "1.3.x",
@@ -10,3 +10,5 @@ export const operation = [
       extensions: []
     }
   ]
+
+  export const operation = _operation;

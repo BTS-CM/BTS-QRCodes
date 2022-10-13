@@ -1,5 +1,5 @@
-export const operation = [
-    "asset_update",
+let _operation = [
+    11,
     {
       issuer: "1.2.x",
       asset_to_update: "1.3.x",
@@ -30,3 +30,5 @@ export const operation = [
       extensions: []
     }
 ]
+
+export const operation = _operation;
