@@ -145,10 +145,6 @@ let run = async function () {
 
     let imageBuffer = await fs.readFileSync('./logo.png');
 
-    console.log({
-        qrContent
-    })
-
     const resultWithImage = await generateQRWithImage(
         JSON.stringify(qrContent),
         300, // width
