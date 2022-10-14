@@ -111,6 +111,29 @@ let run = async function () {
                         }
                     ]
                 },
+                {
+                    type: 'select',
+                    name: 'correction',
+                    message: 'What level of error correction do you require?',
+                    choices: [
+                        {
+                            title: 'L (~7%)',
+                            value: 'L'
+                        },
+                        {
+                            title: 'M (~15%)',
+                            value: 'M'
+                        },
+                        {
+                            title: 'Q (~25%)',
+                            value: 'Q'
+                        },
+                        {
+                            title: 'H (~30%)',
+                            value: 'H'
+                        }
+                    ]
+                },
             ],
             { onCancel }
         );
@@ -147,14 +170,14 @@ let run = async function () {
 
     const resultWithImage = await generateQRWithImage(
         JSON.stringify(qrContent),
-        300, // width
-        10, // margin
+        490, // width
+        50, // margin
         imageBuffer, //imageBuffer
         {
-            errorCorrectionLevel: 'H',
+            errorCorrectionLevel: response.correction,
             color: {
-                dark: '#36415C',
-                light: '#F2F3F8'
+                dark: '#000000',
+                light: '#FFFFFF'
             }
         }
     );
